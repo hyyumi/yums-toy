@@ -1,0 +1,21 @@
+.pos-absolute {
+  position: absolute!important;
+  top: auto;
+  left: auto;
+  right: auto;
+  bottom: auto;
+}
+
+.pos-absolute.left {
+  left: 0;
+}
+
+.pos-absolute.right {
+  right: 0;
+}
+
+.pos-absolute.left, .pos-absolute.right {
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}

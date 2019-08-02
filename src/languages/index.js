@@ -2,13 +2,16 @@ import Vue from 'vue'
 import VueI18n from 'vue-i18n'
 import Cookies from 'js-cookie'
 
+import * as elUILocals from './elUI'
+
 Vue.use(VueI18n)
 
 const langFiles = require.context('./', false, /\.json$/)
 const messages = langFiles.keys().reduce((messages, filePath) => {
   const local = filePath.replace(/^\.\/(.*)\.\w+$/, '$1')
-  const value = langFiles(filePath)
-  messages[local] = value
+  const value = langFiles(filePath) // xx.json file
+  const elUILocal = elUILocals[local] || {}
+  messages[local] = Object.assign(value, elUILocal)
   return messages
 }, {})
 

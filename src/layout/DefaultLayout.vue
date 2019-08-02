@@ -1,10 +1,10 @@
 <template>
-  <div class="default-layout">
+  <el-container class="default-layout" direction="vertical">
     <app-header></app-header>
     <app-main></app-main>
 
     <app-footer></app-footer>
-  </div>
+  </el-container>
 </template>
 <script>
 import { AppMain, AppHeader, AppFooter } from './components'
