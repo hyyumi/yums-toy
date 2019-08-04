@@ -1,6 +1,6 @@
 <template>
   <el-header class="app-header">
-    <div class="logo pos-absolute left">Yums</div>
+    <app-logo class="logo pos-absolute left" />
     <div class="login pos-absolute right">
       <router-link :to="{name:'Login'}">로그인</router-link>
       <router-link :to="{name:'Join'}">회원가입</router-link>
@@ -37,3 +37,13 @@
   }
 }
 </style>
+<script>
+import AppLogo from '@/components/AppLogo'
+
+export default {
+  name: 'AppHeader',
+  components: {
+    AppLogo
+  }
+}
+</script>

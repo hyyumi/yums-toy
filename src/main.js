@@ -16,6 +16,8 @@ import './routes/routerGuard'
 
 import './plugins/firebase'
 
+import './errorLog'
+
 Vue.config.productionTip = false
 
 new Vue({

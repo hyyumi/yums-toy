@@ -1,7 +1,8 @@
 import Vue from 'vue'
 import i18n from '@/languages'
 import ElementUI from 'element-ui'
-import './styles.scss'
+import 'element-ui/lib/theme-chalk/index.css'
+// import './styles.scss'
 
 Vue.use(ElementUI, {
   size: 'small',

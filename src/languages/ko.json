@@ -1,8 +1,8 @@
 {
   "router": {
     "Home": "홈",
-    "Main": "메인",
-    "Invite": "초대장"
+    "Login": "로그인",
+    "Join": "회원가입"
   },
   "AppHeader": {
 
@@ -13,13 +13,31 @@
   "AppMain": {
 
   },
+  "common": {
+    
+  },
+  
   "Home": {
 
   },
-  "Main": {
-
+  "Login": {
+    "email": "Email",
+    "email_ph": "이메일을 입력해주세요",
+    "password": "Password",
+    "password_ph": "비밀번호를 입력해주세요",
+    "login": "Login",
+    "loginFail": "로그인에 실패했습니다.",
+    "join": "회원가입"
   },
-  "common": {
-    
+  "Join": {
+    "email": "Email",
+    "email_ph": "이메일을 입력해주세요",
+    "password": "Password",
+    "password_ph": "비밀번호를 입력해주세요 (대소문자,기호 포함 8~16자)",
+    "password_check": "Password 확인",
+    "password_check_ph": "위와 동일한 비밀번호를 입력해주세요",
+    "join": "가입하기",
+    "joinFail": "가입에 실패했습니다.",
+    "login": "로그인"
   }
 }
